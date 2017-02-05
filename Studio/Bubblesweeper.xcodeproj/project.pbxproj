@@ -38,6 +38,7 @@
 		766E13F91691DADD007B4B09 /* BSGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 766E13F81691DADD007B4B09 /* BSGame.m */; };
 		766E13FC1691DCBD007B4B09 /* BSDashboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 766E13FB1691DCBD007B4B09 /* BSDashboardViewController.m */; };
 		766E13FF1691E499007B4B09 /* NSMutableArray+Shuffle.m in Sources */ = {isa = PBXBuildFile; fileRef = 766E13FE1691E499007B4B09 /* NSMutableArray+Shuffle.m */; };
+		970E0D7C1E456161008BD2BE /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 970E0D7B1E456161008BD2BE /* Media.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +96,7 @@
 		766E13FB1691DCBD007B4B09 /* BSDashboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSDashboardViewController.m; sourceTree = "<group>"; };
 		766E13FD1691E499007B4B09 /* NSMutableArray+Shuffle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Shuffle.h"; sourceTree = "<group>"; };
 		766E13FE1691E499007B4B09 /* NSMutableArray+Shuffle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Shuffle.m"; sourceTree = "<group>"; };
+		970E0D7B1E456161008BD2BE /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 		766DAB5C168067FA006BD819 = {
 			isa = PBXGroup;
 			children = (
+				970E0D7B1E456161008BD2BE /* Media.xcassets */,
 				766DAB71168067FA006BD819 /* Bubblesweeper */,
 				766DAB95168067FB006BD819 /* BubblesweeperTests */,
 				766DAB6A168067FA006BD819 /* Frameworks */,
@@ -270,6 +273,11 @@
 				CLASSPREFIX = BS;
 				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = "Thijs Scheepers";
+				TargetAttributes = {
+					766DAB66168067FA006BD819 = {
+						DevelopmentTeam = JQNK74493B;
+					};
+				};
 			};
 			buildConfigurationList = 766DAB61168067FA006BD819 /* Build configuration list for PBXProject "Bubblesweeper" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -294,6 +302,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				970E0D7C1E456161008BD2BE /* Media.xcassets in Resources */,
 				7650A6E716A491FB0064C646 /* pop.caf in Resources */,
 				766DAB76168067FA006BD819 /* InfoPlist.strings in Resources */,
 				766DAB7E168067FA006BD819 /* Default.png in Resources */,
@@ -441,9 +450,14 @@
 		766DABA1168067FB006BD819 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = JQNK74493B;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Bubblesweeper/Bubblesweeper-Prefix.pch";
 				INFOPLIST_FILE = "Bubblesweeper/Bubblesweeper-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.studio.bubble.100;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -452,9 +466,14 @@
 		766DABA2168067FB006BD819 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = JQNK74493B;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Bubblesweeper/Bubblesweeper-Prefix.pch";
 				INFOPLIST_FILE = "Bubblesweeper/Bubblesweeper-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.studio.bubble.100;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

@@ -1,0 +1,549 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		764D2F6F16A6ADD4006F300F /* Bubble.png in Resources */ = {isa = PBXBuildFile; fileRef = 764D2F6B16A6ADD4006F300F /* Bubble.png */; };
+		764D2F7016A6ADD4006F300F /* Bubble@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 764D2F6C16A6ADD4006F300F /* Bubble@2x.png */; };
+		764D2F7116A6ADD4006F300F /* Popped.png in Resources */ = {isa = PBXBuildFile; fileRef = 764D2F6D16A6ADD4006F300F /* Popped.png */; };
+		764D2F7216A6ADD4006F300F /* Popped@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 764D2F6E16A6ADD4006F300F /* Popped@2x.png */; };
+		7650A6DC16A4799E0064C646 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7650A6DB16A4799E0064C646 /* AudioToolbox.framework */; };
+		7650A6E016A48F150064C646 /* AVAudioPlayer+soundNamed.m in Sources */ = {isa = PBXBuildFile; fileRef = 7650A6DF16A48F150064C646 /* AVAudioPlayer+soundNamed.m */; };
+		7650A6E216A48F4B0064C646 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7650A6E116A48F4B0064C646 /* CoreAudio.framework */; };
+		7650A6E416A48F710064C646 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7650A6E316A48F710064C646 /* AVFoundation.framework */; };
+		7650A6E616A48FBA0064C646 /* pop.caf in Resources */ = {isa = PBXBuildFile; fileRef = 7650A6E516A48FBA0064C646 /* pop.caf */; };
+		7650A6E716A491FB0064C646 /* pop.caf in Resources */ = {isa = PBXBuildFile; fileRef = 7650A6E516A48FBA0064C646 /* pop.caf */; };
+		766DAB6C168067FA006BD819 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 766DAB6B168067FA006BD819 /* UIKit.framework */; };
+		766DAB6E168067FA006BD819 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 766DAB6D168067FA006BD819 /* Foundation.framework */; };
+		766DAB70168067FA006BD819 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 766DAB6F168067FA006BD819 /* CoreGraphics.framework */; };
+		766DAB76168067FA006BD819 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 766DAB74168067FA006BD819 /* InfoPlist.strings */; };
+		766DAB78168067FA006BD819 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 766DAB77168067FA006BD819 /* main.m */; };
+		766DAB7C168067FA006BD819 /* BSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 766DAB7B168067FA006BD819 /* BSAppDelegate.m */; };
+		766DAB7E168067FA006BD819 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 766DAB7D168067FA006BD819 /* Default.png */; };
+		766DAB80168067FA006BD819 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 766DAB7F168067FA006BD819 /* Default@2x.png */; };
+		766DAB82168067FA006BD819 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 766DAB81168067FA006BD819 /* Default-568h@2x.png */; };
+		766DAB85168067FA006BD819 /* BSGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 766DAB84168067FA006BD819 /* BSGameViewController.m */; };
+		766DAB90168067FB006BD819 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 766DAB8F168067FB006BD819 /* SenTestingKit.framework */; };
+		766DAB91168067FB006BD819 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 766DAB6B168067FA006BD819 /* UIKit.framework */; };
+		766DAB92168067FB006BD819 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 766DAB6D168067FA006BD819 /* Foundation.framework */; };
+		766DAB9A168067FB006BD819 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 766DAB98168067FB006BD819 /* InfoPlist.strings */; };
+		766DAB9D168067FB006BD819 /* BubblesweeperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 766DAB9C168067FB006BD819 /* BubblesweeperTests.m */; };
+		766DABA8168068B7006BD819 /* BSBubble.m in Sources */ = {isa = PBXBuildFile; fileRef = 766DABA7168068B7006BD819 /* BSBubble.m */; };
+		766DABAB168068D6006BD819 /* BSGameView.m in Sources */ = {isa = PBXBuildFile; fileRef = 766DABAA168068D6006BD819 /* BSGameView.m */; };
+		766DABAE16807E5B006BD819 /* BSBubbleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 766DABAD16807E5B006BD819 /* BSBubbleView.m */; };
+		766E13F91691DADD007B4B09 /* BSGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 766E13F81691DADD007B4B09 /* BSGame.m */; };
+		766E13FC1691DCBD007B4B09 /* BSDashboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 766E13FB1691DCBD007B4B09 /* BSDashboardViewController.m */; };
+		766E13FF1691E499007B4B09 /* NSMutableArray+Shuffle.m in Sources */ = {isa = PBXBuildFile; fileRef = 766E13FE1691E499007B4B09 /* NSMutableArray+Shuffle.m */; };
+		970E0D7C1E456161008BD2BE /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 970E0D7B1E456161008BD2BE /* Media.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		766DAB93168067FB006BD819 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 766DAB5E168067FA006BD819 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 766DAB66168067FA006BD819;
+			remoteInfo = Bubblesweeper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		764D2F6B16A6ADD4006F300F /* Bubble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bubble.png; sourceTree = "<group>"; };
+		764D2F6C16A6ADD4006F300F /* Bubble@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Bubble@2x.png"; sourceTree = "<group>"; };
+		764D2F6D16A6ADD4006F300F /* Popped.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Popped.png; sourceTree = "<group>"; };
+		764D2F6E16A6ADD4006F300F /* Popped@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Popped@2x.png"; sourceTree = "<group>"; };
+		764D2F7416A6EDD4006F300F /* BSGameDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSGameDelegate.h; sourceTree = "<group>"; };
+		7650A6DB16A4799E0064C646 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		7650A6DE16A48F150064C646 /* AVAudioPlayer+soundNamed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AVAudioPlayer+soundNamed.h"; sourceTree = "<group>"; };
+		7650A6DF16A48F150064C646 /* AVAudioPlayer+soundNamed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AVAudioPlayer+soundNamed.m"; sourceTree = "<group>"; };
+		7650A6E116A48F4B0064C646 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		7650A6E316A48F710064C646 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		7650A6E516A48FBA0064C646 /* pop.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = pop.caf; sourceTree = "<group>"; };
+		766DAB67168067FA006BD819 /* Bubblesweeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bubblesweeper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		766DAB6B168067FA006BD819 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		766DAB6D168067FA006BD819 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		766DAB6F168067FA006BD819 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		766DAB73168067FA006BD819 /* Bubblesweeper-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Bubblesweeper-Info.plist"; sourceTree = "<group>"; };
+		766DAB75168067FA006BD819 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		766DAB77168067FA006BD819 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		766DAB79168067FA006BD819 /* Bubblesweeper-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bubblesweeper-Prefix.pch"; sourceTree = "<group>"; };
+		766DAB7A168067FA006BD819 /* BSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BSAppDelegate.h; sourceTree = "<group>"; };
+		766DAB7B168067FA006BD819 /* BSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BSAppDelegate.m; sourceTree = "<group>"; };
+		766DAB7D168067FA006BD819 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		766DAB7F168067FA006BD819 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		766DAB81168067FA006BD819 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		766DAB83168067FA006BD819 /* BSGameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BSGameViewController.h; sourceTree = "<group>"; };
+		766DAB84168067FA006BD819 /* BSGameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BSGameViewController.m; sourceTree = "<group>"; };
+		766DAB8E168067FB006BD819 /* BubblesweeperTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BubblesweeperTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		766DAB8F168067FB006BD819 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		766DAB97168067FB006BD819 /* BubblesweeperTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BubblesweeperTests-Info.plist"; sourceTree = "<group>"; };
+		766DAB99168067FB006BD819 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		766DAB9B168067FB006BD819 /* BubblesweeperTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BubblesweeperTests.h; sourceTree = "<group>"; };
+		766DAB9C168067FB006BD819 /* BubblesweeperTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BubblesweeperTests.m; sourceTree = "<group>"; };
+		766DABA6168068B7006BD819 /* BSBubble.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSBubble.h; sourceTree = "<group>"; };
+		766DABA7168068B7006BD819 /* BSBubble.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSBubble.m; sourceTree = "<group>"; };
+		766DABA9168068D6006BD819 /* BSGameView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSGameView.h; sourceTree = "<group>"; };
+		766DABAA168068D6006BD819 /* BSGameView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSGameView.m; sourceTree = "<group>"; };
+		766DABAC16807E5B006BD819 /* BSBubbleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSBubbleView.h; sourceTree = "<group>"; };
+		766DABAD16807E5B006BD819 /* BSBubbleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSBubbleView.m; sourceTree = "<group>"; };
+		766E13F71691DADD007B4B09 /* BSGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSGame.h; sourceTree = "<group>"; };
+		766E13F81691DADD007B4B09 /* BSGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSGame.m; sourceTree = "<group>"; };
+		766E13FA1691DCBD007B4B09 /* BSDashboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSDashboardViewController.h; sourceTree = "<group>"; };
+		766E13FB1691DCBD007B4B09 /* BSDashboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSDashboardViewController.m; sourceTree = "<group>"; };
+		766E13FD1691E499007B4B09 /* NSMutableArray+Shuffle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Shuffle.h"; sourceTree = "<group>"; };
+		766E13FE1691E499007B4B09 /* NSMutableArray+Shuffle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Shuffle.m"; sourceTree = "<group>"; };
+		970E0D7B1E456161008BD2BE /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		766DAB64168067FA006BD819 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7650A6E416A48F710064C646 /* AVFoundation.framework in Frameworks */,
+				7650A6E216A48F4B0064C646 /* CoreAudio.framework in Frameworks */,
+				7650A6DC16A4799E0064C646 /* AudioToolbox.framework in Frameworks */,
+				766DAB6C168067FA006BD819 /* UIKit.framework in Frameworks */,
+				766DAB6E168067FA006BD819 /* Foundation.framework in Frameworks */,
+				766DAB70168067FA006BD819 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		766DAB8A168067FB006BD819 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				766DAB90168067FB006BD819 /* SenTestingKit.framework in Frameworks */,
+				766DAB91168067FB006BD819 /* UIKit.framework in Frameworks */,
+				766DAB92168067FB006BD819 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		766DAB5C168067FA006BD819 = {
+			isa = PBXGroup;
+			children = (
+				970E0D7B1E456161008BD2BE /* Media.xcassets */,
+				766DAB71168067FA006BD819 /* Bubblesweeper */,
+				766DAB95168067FB006BD819 /* BubblesweeperTests */,
+				766DAB6A168067FA006BD819 /* Frameworks */,
+				766DAB68168067FA006BD819 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		766DAB68168067FA006BD819 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				766DAB67168067FA006BD819 /* Bubblesweeper.app */,
+				766DAB8E168067FB006BD819 /* BubblesweeperTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		766DAB6A168067FA006BD819 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7650A6E316A48F710064C646 /* AVFoundation.framework */,
+				7650A6E116A48F4B0064C646 /* CoreAudio.framework */,
+				7650A6DB16A4799E0064C646 /* AudioToolbox.framework */,
+				766DAB6B168067FA006BD819 /* UIKit.framework */,
+				766DAB6D168067FA006BD819 /* Foundation.framework */,
+				766DAB6F168067FA006BD819 /* CoreGraphics.framework */,
+				766DAB8F168067FB006BD819 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		766DAB71168067FA006BD819 /* Bubblesweeper */ = {
+			isa = PBXGroup;
+			children = (
+				766DAB7A168067FA006BD819 /* BSAppDelegate.h */,
+				766DAB7B168067FA006BD819 /* BSAppDelegate.m */,
+				766DAB72168067FA006BD819 /* Supporting Files */,
+				766DABA6168068B7006BD819 /* BSBubble.h */,
+				766DABA7168068B7006BD819 /* BSBubble.m */,
+				766DABA9168068D6006BD819 /* BSGameView.h */,
+				766DABAA168068D6006BD819 /* BSGameView.m */,
+				766DABAC16807E5B006BD819 /* BSBubbleView.h */,
+				766DABAD16807E5B006BD819 /* BSBubbleView.m */,
+				766E13F71691DADD007B4B09 /* BSGame.h */,
+				766E13F81691DADD007B4B09 /* BSGame.m */,
+				766DAB83168067FA006BD819 /* BSGameViewController.h */,
+				766DAB84168067FA006BD819 /* BSGameViewController.m */,
+				766E13FA1691DCBD007B4B09 /* BSDashboardViewController.h */,
+				766E13FB1691DCBD007B4B09 /* BSDashboardViewController.m */,
+				766E13FD1691E499007B4B09 /* NSMutableArray+Shuffle.h */,
+				766E13FE1691E499007B4B09 /* NSMutableArray+Shuffle.m */,
+				7650A6DE16A48F150064C646 /* AVAudioPlayer+soundNamed.h */,
+				7650A6DF16A48F150064C646 /* AVAudioPlayer+soundNamed.m */,
+				764D2F7416A6EDD4006F300F /* BSGameDelegate.h */,
+			);
+			path = Bubblesweeper;
+			sourceTree = "<group>";
+		};
+		766DAB72168067FA006BD819 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				764D2F6B16A6ADD4006F300F /* Bubble.png */,
+				764D2F6C16A6ADD4006F300F /* Bubble@2x.png */,
+				764D2F6D16A6ADD4006F300F /* Popped.png */,
+				764D2F6E16A6ADD4006F300F /* Popped@2x.png */,
+				7650A6E516A48FBA0064C646 /* pop.caf */,
+				766DAB73168067FA006BD819 /* Bubblesweeper-Info.plist */,
+				766DAB74168067FA006BD819 /* InfoPlist.strings */,
+				766DAB77168067FA006BD819 /* main.m */,
+				766DAB79168067FA006BD819 /* Bubblesweeper-Prefix.pch */,
+				766DAB7D168067FA006BD819 /* Default.png */,
+				766DAB7F168067FA006BD819 /* Default@2x.png */,
+				766DAB81168067FA006BD819 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		766DAB95168067FB006BD819 /* BubblesweeperTests */ = {
+			isa = PBXGroup;
+			children = (
+				766DAB9B168067FB006BD819 /* BubblesweeperTests.h */,
+				766DAB9C168067FB006BD819 /* BubblesweeperTests.m */,
+				766DAB96168067FB006BD819 /* Supporting Files */,
+			);
+			path = BubblesweeperTests;
+			sourceTree = "<group>";
+		};
+		766DAB96168067FB006BD819 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				766DAB97168067FB006BD819 /* BubblesweeperTests-Info.plist */,
+				766DAB98168067FB006BD819 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		766DAB66168067FA006BD819 /* Bubblesweeper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 766DABA0168067FB006BD819 /* Build configuration list for PBXNativeTarget "Bubblesweeper" */;
+			buildPhases = (
+				766DAB63168067FA006BD819 /* Sources */,
+				766DAB64168067FA006BD819 /* Frameworks */,
+				766DAB65168067FA006BD819 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Bubblesweeper;
+			productName = Bubblesweeper;
+			productReference = 766DAB67168067FA006BD819 /* Bubblesweeper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		766DAB8D168067FB006BD819 /* BubblesweeperTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 766DABA3168067FB006BD819 /* Build configuration list for PBXNativeTarget "BubblesweeperTests" */;
+			buildPhases = (
+				766DAB89168067FB006BD819 /* Sources */,
+				766DAB8A168067FB006BD819 /* Frameworks */,
+				766DAB8B168067FB006BD819 /* Resources */,
+				766DAB8C168067FB006BD819 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				766DAB94168067FB006BD819 /* PBXTargetDependency */,
+			);
+			name = BubblesweeperTests;
+			productName = BubblesweeperTests;
+			productReference = 766DAB8E168067FB006BD819 /* BubblesweeperTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		766DAB5E168067FA006BD819 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = BS;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Thijs Scheepers";
+				TargetAttributes = {
+					766DAB66168067FA006BD819 = {
+						DevelopmentTeam = 7A3KSATNU7;
+					};
+				};
+			};
+			buildConfigurationList = 766DAB61168067FA006BD819 /* Build configuration list for PBXProject "Bubblesweeper" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 766DAB5C168067FA006BD819;
+			productRefGroup = 766DAB68168067FA006BD819 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				766DAB66168067FA006BD819 /* Bubblesweeper */,
+				766DAB8D168067FB006BD819 /* BubblesweeperTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		766DAB65168067FA006BD819 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				970E0D7C1E456161008BD2BE /* Media.xcassets in Resources */,
+				7650A6E716A491FB0064C646 /* pop.caf in Resources */,
+				766DAB76168067FA006BD819 /* InfoPlist.strings in Resources */,
+				766DAB7E168067FA006BD819 /* Default.png in Resources */,
+				766DAB80168067FA006BD819 /* Default@2x.png in Resources */,
+				766DAB82168067FA006BD819 /* Default-568h@2x.png in Resources */,
+				764D2F6F16A6ADD4006F300F /* Bubble.png in Resources */,
+				764D2F7016A6ADD4006F300F /* Bubble@2x.png in Resources */,
+				764D2F7116A6ADD4006F300F /* Popped.png in Resources */,
+				764D2F7216A6ADD4006F300F /* Popped@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		766DAB8B168067FB006BD819 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				766DAB9A168067FB006BD819 /* InfoPlist.strings in Resources */,
+				7650A6E616A48FBA0064C646 /* pop.caf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		766DAB8C168067FB006BD819 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		766DAB63168067FA006BD819 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				766DAB78168067FA006BD819 /* main.m in Sources */,
+				766DAB7C168067FA006BD819 /* BSAppDelegate.m in Sources */,
+				766DAB85168067FA006BD819 /* BSGameViewController.m in Sources */,
+				766DABA8168068B7006BD819 /* BSBubble.m in Sources */,
+				766DABAB168068D6006BD819 /* BSGameView.m in Sources */,
+				766DABAE16807E5B006BD819 /* BSBubbleView.m in Sources */,
+				766E13F91691DADD007B4B09 /* BSGame.m in Sources */,
+				766E13FC1691DCBD007B4B09 /* BSDashboardViewController.m in Sources */,
+				766E13FF1691E499007B4B09 /* NSMutableArray+Shuffle.m in Sources */,
+				7650A6E016A48F150064C646 /* AVAudioPlayer+soundNamed.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		766DAB89168067FB006BD819 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				766DAB9D168067FB006BD819 /* BubblesweeperTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		766DAB94168067FB006BD819 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 766DAB66168067FA006BD819 /* Bubblesweeper */;
+			targetProxy = 766DAB93168067FB006BD819 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		766DAB74168067FA006BD819 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				766DAB75168067FA006BD819 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		766DAB98168067FB006BD819 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				766DAB99168067FB006BD819 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		766DAB9E168067FB006BD819 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		766DAB9F168067FB006BD819 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		766DABA1168067FB006BD819 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = 7A3KSATNU7;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Bubblesweeper/Bubblesweeper-Prefix.pch";
+				INFOPLIST_FILE = "Bubblesweeper/Bubblesweeper-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.media.bubble.100;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		766DABA2168067FB006BD819 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = 7A3KSATNU7;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Bubblesweeper/Bubblesweeper-Prefix.pch";
+				INFOPLIST_FILE = "Bubblesweeper/Bubblesweeper-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.media.bubble.100;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		766DABA4168067FB006BD819 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Bubblesweeper.app/Bubblesweeper";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Bubblesweeper/Bubblesweeper-Prefix.pch";
+				INFOPLIST_FILE = "BubblesweeperTests/BubblesweeperTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		766DABA5168067FB006BD819 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Bubblesweeper.app/Bubblesweeper";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Bubblesweeper/Bubblesweeper-Prefix.pch";
+				INFOPLIST_FILE = "BubblesweeperTests/BubblesweeperTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		766DAB61168067FA006BD819 /* Build configuration list for PBXProject "Bubblesweeper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				766DAB9E168067FB006BD819 /* Debug */,
+				766DAB9F168067FB006BD819 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		766DABA0168067FB006BD819 /* Build configuration list for PBXNativeTarget "Bubblesweeper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				766DABA1168067FB006BD819 /* Debug */,
+				766DABA2168067FB006BD819 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		766DABA3168067FB006BD819 /* Build configuration list for PBXNativeTarget "BubblesweeperTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				766DABA4168067FB006BD819 /* Debug */,
+				766DABA5168067FB006BD819 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 766DAB5E168067FA006BD819 /* Project object */;
+}

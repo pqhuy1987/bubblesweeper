@@ -21,7 +21,7 @@
     
     self.title = @"Bubblesweeper";
     
-    [self.view setBackgroundColor:[UIColor cyanColor]];
+    [self.view setBackgroundColor:[UIColor grayColor]];
     
     startEasyGameButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     [startEasyGameButton setTitle:@"Start easy game" forState:UIControlStateNormal];
@@ -29,7 +29,7 @@
                             action:@selector(startGame:)
                   forControlEvents:UIControlEventTouchDown];
     startEasyGameButton.frame = CGRectMake(80.0, 140.0, 160.0, 40.0);
-    startEasyGameButton.backgroundColor = [UIColor blueColor];
+    startEasyGameButton.backgroundColor = [UIColor blackColor];
     startEasyGameButton.layer.cornerRadius = 5;
     [startEasyGameButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [[self view] addSubview:startEasyGameButton];
@@ -40,7 +40,7 @@
                             action:@selector(startGame:)
                   forControlEvents:UIControlEventTouchDown];
     startDifficultGameButton.frame = CGRectMake(80.0, 240.0, 160.0, 40.0);
-    startDifficultGameButton.backgroundColor = [UIColor blueColor];
+    startDifficultGameButton.backgroundColor = [UIColor blackColor];
     startDifficultGameButton.layer.cornerRadius = 5;
     [startDifficultGameButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [[self view] addSubview:startDifficultGameButton];

@@ -55,7 +55,7 @@
                 [bubble setPopped:YES];
         }];
         
-        gameFinishedAlertView = [[UIAlertView alloc] initWithTitle:@"Unfortunately, lost" message:@"You've popped the wrong bubble!" delegate:self cancelButtonTitle:@"Go back" otherButtonTitles: nil];
+        gameFinishedAlertView = [[UIAlertView alloc] initWithTitle:@"BOOM!" message:@"You've popped the boom bubble!" delegate:self cancelButtonTitle:@"Go back" otherButtonTitles: nil];
         [gameFinishedAlertView show];
     }
     

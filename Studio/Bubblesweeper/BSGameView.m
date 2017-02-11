@@ -18,7 +18,7 @@
     if(self = [super initWithFrame:frame])
     {
         
-        [self setBackgroundColor:[UIColor colorWithRed:97/255.f green:152/255.f blue:195/255.f alpha:1]];
+        [self setBackgroundColor:[UIColor colorWithRed:255/255.f green:130/255.f blue:71/255.f alpha:1]];
        
         game = aGame;
         

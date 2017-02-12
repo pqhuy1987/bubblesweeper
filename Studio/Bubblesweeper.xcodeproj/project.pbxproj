@@ -457,7 +457,7 @@
 				GCC_PREFIX_HEADER = "Bubblesweeper/Bubblesweeper-Prefix.pch";
 				INFOPLIST_FILE = "Bubblesweeper/Bubblesweeper-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.studio.minesweeper2.100;
+				PRODUCT_BUNDLE_IDENTIFIER = com.twokingstudio.spinning.100;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -473,7 +473,7 @@
 				GCC_PREFIX_HEADER = "Bubblesweeper/Bubblesweeper-Prefix.pch";
 				INFOPLIST_FILE = "Bubblesweeper/Bubblesweeper-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.studio.minesweeper2.100;
+				PRODUCT_BUNDLE_IDENTIFIER = com.twokingstudio.spinning.100;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
